@@ -19,15 +19,15 @@ function DayFinder() {
   };
 
   return (
-    <div style={{ padding: '30px' }}>
-      <h1>Day Finder</h1>
+    <div style={{ padding: '30px' }} id="div1">
+      <p>Day Finder</p>
       <input
-        type="date"
+        type="date" 
         value={date}
         onChange={(e) => setDate(e.target.value)}
-        style={{ marginRight: '10px' }}
+        style={{ marginRight: '10px',fontSize:'30px' }}
       />
-      <button onClick={findDay}>Find Day</button>
+      <button onClick={findDay} >Find Day</button>
       <p>{result}</p>
     </div>
   );
